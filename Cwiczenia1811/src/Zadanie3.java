@@ -29,6 +29,8 @@ public class Zadanie3 {
                 double wynik4 = pierwszaLiczba * drugaLiczba;
                 System.out.println("Wybrano mnozenie. Wartosc absolutna wyniku to: " + absoluteValue(wynik4));
                 break;
+            default:
+                System.out.println("Nie wybrano poprawnej metody");                
 
         }
 
