@@ -1,32 +1,31 @@
+import java.util.Scanner;
 
-public class Zadanie4 {
+public class zadanie41 {
 
-    public static String getAlphaNumericString(int n)
+    public static String getString(int dlugosc)
     {
 
-        // chose a Character random from this String
-        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                + "0123456789"
-                + "abcdefghijklmnopqrstuvxyz";
+        String givenValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz0123456789";
 
-        // create StringBuffer size of AlphaNumericString
-        StringBuilder sb = new StringBuilder(n);
+            StringBuilder buildString = new StringBuilder(dlugosc);
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < dlugosc; i++) {
             int index
-                    = (int)(AlphaNumericString.length()
+                    = (int)(givenValues.length()
                     * Math.random());
-            sb.append(AlphaNumericString
+            buildString.append(givenValues
                     .charAt(index));
         }
 
-        return sb.toString();
+        return buildString.toString();
     }
 
     public static void main(String[] args)
     {
-        int n = 5;
-        System.out.println(Zadanie4
-                .getAlphaNumericString(n));
+        Scanner podaj = new Scanner(System.in);
+        System.out.println("Podaj dlugosc stringa");
+        int dlugosc = podaj.nextInt();
+        System.out.println(zadanie41
+                .getString(dlugosc));
     }
 }
