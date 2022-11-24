@@ -5,24 +5,25 @@ public class Zadanie2 {
         Scanner kantororo = new Scanner(System.in);
         System.out.println("Witamy w kalkulatorze!");
         System.out.println("Podaj pierwsza liczbe: ");
-        int pierwszaLiczba = kantororo.nextInt();
+        double pierwszaLiczba = kantororo.nextInt();
         System.out.println("Podaj druga liczbe: ");
-        int drugaLiczba = kantororo.nextInt();
-        System.out.println("Podaj wybrana metode: \n1 - ADD (do dodawania)\n2 - SUB (do odejmowania)\n3 - DIV (do dzielenia)\n4 - MUL (do mnozenia)");
-        int metoda = kantororo.nextInt();
+        double drugaLiczba = kantororo.nextInt();
+        System.out.println("Podaj wybrana metode: \nADD (do dodawania)\nSUB (do odejmowania)\nDIV (do dzielenia)\nMUL (do mnozenia)");
+        kantororo.nextLine();
+        String metoda = kantororo.nextLine();
 
         switch (metoda) {
-            case 1:
-                System.out.println("Wybrano dodawanie. Wynik dodawania to: " + pierwszaLiczba + drugaLiczba);
+            case "ADD":
+                System.out.println("Wybrano dodawanie. Wynik to: " + pierwszaLiczba + drugaLiczba);
                 break;
-            case 2:
-                System.out.println("Wybrano odejmowanie. Wynik odejmowania to: " + (pierwszaLiczba - drugaLiczba));
+            case "SUB":
+                System.out.println("Wybrano odejmowanie. Wynik to: " + (pierwszaLiczba - drugaLiczba));
                 break;
-            case 3:
-                System.out.println("Wybrano mnozenie. Wynik mnozenia to: " + (pierwszaLiczba * drugaLiczba));
+            case "DIV":
+                System.out.println("Wybrano dzielenie. Wynik to: " + pierwszaLiczba / drugaLiczba);
                 break;
-            case 4:
-                System.out.println("Wybrano dzielenie. Wynik dzielenia to: " + (pierwszaLiczba / drugaLiczba));
+            case "MUL":
+                System.out.println("Wybrano mnozenie. Wynik to: " + pierwszaLiczba * drugaLiczba);
                 break;
 
         }
@@ -30,4 +31,3 @@ public class Zadanie2 {
     }
 
 }
-
