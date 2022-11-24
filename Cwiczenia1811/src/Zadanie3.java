@@ -15,19 +15,19 @@ public class Zadanie3 {
         switch (metoda) {
             case "ADD":
                 int wynik = pierwszaLiczba + drugaLiczba;
-                System.out.println("Wybrano dodawanie. Wynik dodawania to: " + absoluteValue(wynik));
+                System.out.println("Wybrano dodawanie. Wartosc absolutna wyniku to: " + absoluteValue(wynik));
                 break;
             case "SUB":
                 int wynik2 = pierwszaLiczba - drugaLiczba;
-                System.out.println("Wybrano odejmowanie. Wynik odejmowania to: " + absoluteValue(wynik2));
+                System.out.println("Wybrano odejmowanie. Wartosc absolutna wyniku to: " + absoluteValue(wynik2));
                 break;
             case "DIV":
                 int wynik3 = pierwszaLiczba * drugaLiczba;
-                System.out.println("Wybrano mnozenie. Wynik mnozenia to: " + absoluteValue(wynik3));
+                System.out.println("Wybrano mnozenie. Wartosc absolutna wyniku to: " + absoluteValue(wynik3));
                 break;
             case "MUL":
                 int wynik4 = pierwszaLiczba / drugaLiczba;
-                System.out.println("Wybrano dzielenie. Wynik dzielenia to: " + absoluteValue(wynik4));
+                System.out.println("Wybrano dzielenie. Wartosc absolutna wyniku to: " + absoluteValue(wynik4));
                 break;
 
         }
@@ -35,7 +35,6 @@ public class Zadanie3 {
     }
 
     public static int absoluteValue (int b){
-            return Math.abs(b);
-        }
+        return Math.abs(b);
     }
-
+}
