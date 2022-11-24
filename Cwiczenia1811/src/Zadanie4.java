@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class zadanie41 {
+public class Zadanie4 {
 
     public static String getString(int dlugosc)
     {
@@ -25,7 +25,7 @@ public class zadanie41 {
         Scanner podaj = new Scanner(System.in);
         System.out.println("Podaj dlugosc stringa");
         int dlugosc = podaj.nextInt();
-        System.out.println(zadanie41
+        System.out.println(Zadanie4
                 .getString(dlugosc));
     }
 }
