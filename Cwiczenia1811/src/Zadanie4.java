@@ -10,11 +10,8 @@ public class Zadanie4 {
             StringBuilder buildString = new StringBuilder(dlugosc);
 
         for (int i = 0; i < dlugosc; i++) {
-            int index
-                    = (int)(givenValues.length()
-                    * Math.random());
-            buildString.append(givenValues
-                    .charAt(index));
+            int index = (int)(givenValues.length()* Math.random());
+            buildString.append(givenValues.charAt(index));
         }
 
         return buildString.toString();
