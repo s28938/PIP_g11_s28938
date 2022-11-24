@@ -25,6 +25,8 @@ public class Zadanie2 {
             case "MUL":
                 System.out.println("Wybrano mnozenie. Wynik to: " + pierwszaLiczba * drugaLiczba);
                 break;
+            default:
+                System.out.println("Nie wybrano poprawnej metody");
 
         }
 
