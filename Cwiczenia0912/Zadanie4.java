@@ -12,12 +12,12 @@ public class Zadanie4 {
                 break;
             }
         }
-        System.out.println("Is " + toCheckValue
-                + " present in the array: " + test);
+        System.out.println("Czy " + toCheckValue
+                + " znajduje sie w tablicy?: " + test);
     }
     public static boolean Recursive(int[] myArray, int element, int size){
         if (size == 0){
-            System.out.println("Blad");
+            System.out.println("Elementu nie ma w tabeli");
             return false;
         }
         if (myArray[size-1] == element){
@@ -32,13 +32,13 @@ public class Zadanie4 {
     public static void main(String[] args)
     {
         int arr[] = { 5, 1, 1, 9, 7, 2, 6, 10 };
-        int toCheckValue = 21;
+        int toCheckValue = 10;
 
-        System.out.println("Array: "
-                + Arrays.toString(arr));
+        System.out.println("Array: "+ Arrays.toString(arr));
+        System.out.println("Metoda wykorzystujaca petle: ");
         ForEach(arr, toCheckValue);
+        System.out.println("Metoda wykorzystujaca rekurencje: ");
         Recursive(arr,toCheckValue,arr.length);
 
     }
 }
-
