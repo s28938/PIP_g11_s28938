@@ -13,7 +13,7 @@ public class Enemy {
 
     public void attack(Billionaire billionaire) {
         Random rand = new Random();
-        int decyzja = rand.nextInt();
+        double decyzja = rand.nextDouble();
         if (decyzja > 0.5) {
             billionaire.danger = true;
         }
