@@ -9,7 +9,7 @@ public class Zadanie1 {
         Osoba wypelnianko = new Osoba(imieNazwisko, email, krajZamieszkania );
         System.out.println(wypelnianko);
 
-        File plik = new File ("src/data.txt");
+        File plik = new File ("https://github.com/s28938/PIP_g11_s28938/blob/dd320faf749f7c200d75d72a3e59cdaa2ba94c43/cwiczenia2701/src/dataNowy.txt");
         BufferedReader reader = new BufferedReader(new FileReader(plik));
         String [] text = new String[10];
         String tmp;
