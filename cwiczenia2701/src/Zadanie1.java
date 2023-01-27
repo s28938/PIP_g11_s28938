@@ -8,7 +8,7 @@ public class Zadanie1 {
         String krajZamieszkania = "USA";
         Osoba wypelnianko = new Osoba(imieNazwisko, email, krajZamieszkania );
         System.out.println(wypelnianko);
-
+        System.out.println("Zadanie 2");
         File plik = new File ("C:\\Users\\s28938\\Documents\\GitHub\\PIP_g11_s28938\\cwiczenia2701\\src\\dataNowy.txt");
         //ze wzgledu na blokowany dysk wrzucilem pelna referencje, powinna być skrócona ponieważ plik dataNowy jest w tej lokalizacji
         BufferedReader reader = new BufferedReader(new FileReader(plik));
