@@ -9,26 +9,27 @@ public class Zadanie1 {
         Osoba wypelnianko = new Osoba(imieNazwisko, email, krajZamieszkania );
         System.out.println(wypelnianko);
 
-        File plik = new File ("https://github.com/s28938/PIP_g11_s28938/blob/dd320faf749f7c200d75d72a3e59cdaa2ba94c43/cwiczenia2701/src/dataNowy.txt");
+        File plik = new File ("C:\\Users\\s28938\\Documents\\GitHub\\PIP_g11_s28938\\cwiczenia2701\\src\\dataNowy.txt");
+        //ze wzgledu na blokowany dysk wrzucilem pelna referencje, powinna być skrócona ponieważ plik dataNowy jest w tej lokalizacji
         BufferedReader reader = new BufferedReader(new FileReader(plik));
         String [] text = new String[10];
         String tmp;
         int i = 0;
 
-        System.out.println("Zadanie 2");
+        //System.out.println("Zadanie 2");
         while((tmp = reader.readLine()) != null){
             text[i] = tmp;
-            System.out.println(text[i]);
+            //System.out.println(text[i]);
             i++;
         }
         reader.close();
 
-        System.out.println("Zadanie 3");
-        String[][] shades = new String[10][3];
+        System.out.println("Tablica Osoba");
+        String[][] Osoba = new String[10][3];
         for(int t = 0; t < text.length; t++){
-            shades[t] = splitBy(text[t],",");
+            Osoba[t] = splitBy(text[t],",");
         }
-        System.out.println(Arrays.deepToString(shades));
+        System.out.println(Arrays.deepToString(Osoba));
     }
     public static String[] splitBy (String line, String separator){
         String[] tablica = line.split(separator);
